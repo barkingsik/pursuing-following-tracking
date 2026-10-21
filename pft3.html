@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PTF series 3</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <style>
+
+        /* 모바일 기준: 모든 것을 위에서 아래로 한 줄씩 쌓아서 보여줍니다 */
+
+        /* 1), 2) 시리즈가 완성되기 전까지 제목을 숨기고, 메뉴에서는 3)만 보여줍니다.
+           세 시리즈를 모두 보여줄 때는 아래 세 줄을 지우고,
+           아래쪽 메뉴(nav) 안에서 1), 2) 줄을 감싸고 있는 주석 표시(위아래 두 줄)도 지우세요. */
+        .title {
+            display: none;
+        }
+
+        #pft3_intro {
+            padding: 10px 0;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        p {
+            padding: 8pt 0;
+            margin: 0;
+        }
+
+        .hashtags_list {
+            margin: 24px 0 60px 0;
+        }
+
+        /* 해시태그 한 줄(한 항목)이 화면 폭을 꽉 채우고 아래로 쌓입니다 */
+        details {
+            display: block;
+            margin: 0;
+        }
+
+        details > summary {
+            list-style: none;
+            cursor: pointer;
+            font-size: 16px;
+            line-height: 1.6;
+            padding: 3px 0;
+            word-break: break-word;
+        }
+
+        details:hover > summary {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        summary {
+            outline: none;
+        }
+
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+
+        /* 사진: 모바일에서는 작은 썸네일이 가로로 나란히, 줄이 차면 아래로 */
+        details .photos {
+            padding: 6px 0 18px 0;
+            text-align: center;
+        }
+
+        details .photos img {
+            width: 160px;
+            max-width: 48%;
+            height: auto;
+            margin: 0 2px 4px 2px;
+            vertical-align: top;
+        }
+
+        /* 큰 화면(컴퓨터)에서는 사진을 조금 더 크게 보여줍니다 */
+        @media (min-width: 768px) {
+            details .photos {
+                text-align: left;
+            }
+
+            details .photos img {
+                width: auto;
+                max-width: none;
+                height: 220px;
+                margin: 0 8px 8px 0;
+            }
+        }
+
+    </style>
+  </head>
+
+  <body>
+
+        <div class="title"><a href="index.html">
+        <h1>Pursuing, Following, Tracking</h1>
+        </a></div>
+
+        <nav>
+<!--
+         1)<a href="pft1.html"> Without 'S', 2016~2021, 120 photographs</a><br>
+         2)<a href="pft2.html"> A Chase in Venice, 2020, single channel</a><br>
+-->
+         3)<a href="pft3.html"> Please Send Me the Photographs I Am Tracking, 2021, website</a></nav>
+
+        <div id="pft3_intro">
+            <p>If you think, "I know where this is. I've seen this before,"<br>
+            please email me the image you think I'm looking for, along with a link to its source.<br>
+            <a href="mailto:pursuing.following.tracking@gmail.com">pursuing.following.tracking@gmail.com</a><br><br>
+            It will be uploaded here.</p>
+        </div>
+
+        <div class="hashtags_list">
+
+            <details><summary>
+            1.#France #Paris #Le_Marais #buildings #roof #sky #monochrome </summary>
+            <div class="photos">
+            <img src="pics/1_1.jpg" title="여깃네">
+            <img src="pics/1_2.jpg">
+            </div></details>
+
+            <details><summary>
+            2.#France #Paris #Notre_Dame_Cathedral #Pont_de_la_Tournelle #monochrome</summary>
+            <div class="photos">
+            <img src="pics/2_1.jpg">
+            <img src="pics/2_2.jpg">
+            </div></details>
+
+            <details><summary>
+            3.#Germany #Frankfurt #am_Main #monochrome </summary>
+            <div class="photos">
+            <img src="pics/3_1.jpg">
+            <img src="pics/3_2.jpg">
+            <img src="pics/3_3.jpg">
+            <img src="pics/3_4.jpg">
+            <img src="pics/3_5.jpg">
+            <img src="pics/3_6.jpg">
+            <img src="pics/3_7.jpg">
+            </div></details>
+
+            <details><summary>
+            4.#France #Paris #Louvre #Mona_Lisa</summary>
+            <div class="photos">
+            <img src="pics/4_1.jpg">
+            <img src="pics/4_2.jpg">
+            <img src="pics/4_3.jpg">
+            <img src="pics/4_4.jpg">
+            <img src="pics/4_5.jpg">
+            <img src="pics/4_6.jpg">
+            <img src="pics/4_7.jpg">
+            </div></details>
+
+            <details><summary>
+            5.#USA #United_State #New_york #MOMA #Museum_of_Modern_Art #Claude_Monet #Water_Lilies_and_Reflection #dad_daughter</summary>
+            <div class="photos">
+            <img src="pics/5_1.jpg">
+            <img src="pics/5_2.jpg">
+            <img src="pics/5_3.jpg">
+            <img src="pics/5_4.jpg">
+            <img src="pics/5_5.jpg">
+            <img src="pics/5_6.jpg">
+            <img src="pics/5_7.jpg">
+            <img src="pics/5_8.jpg">
+            </div></details>
+
+            <details><summary>
+            6.#USA #United_State #New_york #Brooklyn #dumbo #manhattan_bridge #Washington_street_front_and_Water_streets</summary>
+            <div class="photos">
+            <img src="pics/6_1.jpg">
+            <img src="pics/6_2.jpg">
+            <img src="pics/6_3.jpg">
+            <img src="pics/6_4.jpg">
+            <img src="pics/6_5.jpg">
+            <img src="pics/6_6.jpg">
+            <img src="pics/6_7.jpg">
+            </div></details>
+
+            <details><summary>
+            7.#USA #United_State #New_york #guggenheim_museum #interior</summary>
+            <div class="photos">
+            <img src="pics/7_1.jpg">
+            </div></details>
+
+            <details><summary>
+            8.#Japan #Osaka #Dotonbori #glico #running_man #ebisu_bridge #night #monocrome</summary>
+            <div class="photos">
+            <img src="pics/8_1.jpg">
+            <img src="pics/8_2.jpg">
+            <img src="pics/8_3.jpg">
+            </div></details>
+
+            <details><summary>
+            9.#Myanmar #monk #standing_by_the_wall</summary>
+            <div class="photos">
+            <img src="pics/9_1.jpg">
+            <img src="pics/9_2.jpg">
+            <img src="pics/9_3.jpg">
+            <img src="pics/9_4.jpg">
+            </div></details>
+
+            <details><summary>
+            10.#France #Louvre #venus_of_Milo #monochrome</summary>
+            <div class="photos">
+            <img src="pics/10_1.jpg">
+            <img src="pics/10_2.jpg">
+            <img src="pics/10_3.jpg">
+            <img src="pics/10_4.jpg">
+            <img src="pics/10_5.jpg">
+            <img src="pics/10_6.jpg">
+            <img src="pics/10_7.jpg">
+            <img src="pics/10_8.jpg">
+            <img src="pics/10_9.jpg">
+            <img src="pics/10_10.jpg">
+            <img src="pics/10_11.jpg">
+            </div></details>
+
+            <details><summary>
+            11.#France #Louvre #Winged_Victory_of_Samothrace #Nike_of_Samothrace #left_side #monochrome</summary>
+            <div class="photos">
+            <img src="pics/11_1.jpg">
+            <img src="pics/11_2.jpg">
+            <img src="pics/11_3.jpg">
+            <img src="pics/11_4.jpg">
+            </div></details>
+
+            <details><summary>
+            12.#France #Louvre #Winged_Victory_of_Samothrace #Nike_of_Samothrace #stairs #monochrome</summary>
+            <div class="photos">
+            <img src="pics/12_1.jpg">
+            <img src="pics/12_2.jpg">
+            <img src="pics/12_3.jpg">
+            <img src="pics/12_4.jpg">
+            <img src="pics/12_5.jpg">
+            <img src="pics/12_6.jpg">
+            <img src="pics/12_7.jpg">
+            </div></details>
+
+            <details><summary>
+            13.#USA #New_York #public_library #NYPL #monochrome</summary>
+            <div class="photos">
+            <img src="pics/13_1.jpg">
+            <img src="pics/13_2.jpg">
+            <img src="pics/13_3.jpg">
+            </div></details>
+
+            <details><summary>
+            14.#USA #New_York #intersection #Spring_street_and_Broadway #Broom_street_direction #monochrome</summary>
+            <div class="photos">
+            <img src="pics/14_1.jpg">
+            <img src="pics/14_2.jpg">
+            </div></details>
+
+            <details><summary>
+            15.#USA #New_York #Whitney_Museum_of_American_Art #Renzo_Piano #monochrome</summary>
+            <div class="photos">
+            <img src="pics/15_1.jpg">
+            </div></details>
+
+            <details><summary>
+            16.#USA #New_York #MOMA #Museum_of_Modern_Art #John_Baldessari #What_is_Painting #with_the_man_standing_in_front_of_this_painting #monochrome</summary>
+            <div class="photos">
+            <img src="pics/16_1.jpg">
+            </div></details>
+
+        </div>
+
+  </body>
+</html>
